@@ -1,1 +1,20 @@
-/* add your CSS here */
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  background-image: url('public/background1.jpg');
+}
+
+.main-container {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  margin-inline: auto;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(217, 238, 224, 0.8);
+}
