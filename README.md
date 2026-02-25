@@ -1,24 +1,29 @@
-# Lab 2 - Landing page
+# Дачный Сад - Landing Page
 
-Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
+A landing page for a small business that sells seedlings and plants in Vadul lui Voda.
 
-> For a maximal grade, the website should be for a real client (your/friends/relatives business), otherwise -1-2 points
+**Page is live at:** https://tukaram40k.github.io/tum-web-lab-landing-page/
 
-## Customer requirements
+## Content
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
+- **Hero section** with introduction
+- **About section** describing the family garden story
+- **Plant catalog** with two categories:
+  - Trees and shrubs (9 varieties)
+  - Flowers and ground covers (5 varieties)
+- **Contact section** with address, phone numbers, email, and embedded Google Map
 
-## Dev requirements
+## Page Screenshots
+Hero section:
 
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
+![scr1](img/image.png)
 
-## Other requirements:
+Plants section:
 
-- For potential maximal mark, a WIP version should be submitted during the class
-- Use index.html, reset.css
+![scr2](img/image-1.png)
+
+![scr3](img/image-2.png)
+
+Contact section:
+
+![scr4](img/image-3.png)
