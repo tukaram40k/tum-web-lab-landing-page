@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Дачный Сад</title>
-  <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../../public/favicon-32x32.png">
@@ -28,7 +27,7 @@
     <!-- main -->
     <main class="main-content">
       <!-- hero -->
-      <section id="home" class="hero">
+      <section id="home" class="hero py-[60px] px-[40px] mb-8">
         <div class="hero-content">
           <h1>Саженцы из нашего семейного сада</h1>
           <p class="hero-subtitle">Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной
@@ -38,7 +37,7 @@
       </section>
 
       <!-- about -->
-      <section id="about" class="section">
+      <section id="about" class="section p-8 mb-8">
         <div class="about-content">
           <h2 class="section-title">Про нас</h2>
           <div class="about-text">
@@ -57,63 +56,63 @@
       </section>
 
       <!-- plants -->
-      <section id="plants" class="section">
+      <section id="plants" class="section p-8 mb-8">
         <h2 class="section-title">Саженцы</h2>
         <p class="section-subtitle">Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников
           цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.</p>
-        <div class="plant-categories">
+        <div class="plant-categories flex flex-col gap-8">
           <div class="category">
             <h3>Деревья и кустарники</h3>
-            <div class="plant-grid">
-              <div class="plant-card">
+            <div class="plant-grid grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              <div class="plant-card p-5">
                 <img src="../public/boyarishnik.png" alt="Boyarishnik">
                 <h4>Боярышник</h4>
                 <p class="plant-price">65 MDL</p>
                 <p class="plant-desc">Лекарственный и декоративный</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/tuia.png" alt="Tuia">
                 <h4>Туя</h4>
                 <p class="plant-price">180 MDL</p>
                 <p class="plant-desc">Вечнозеленое хвойное растение</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/dioren.png" alt="Dioren">
                 <h4>Дёрен</h4>
                 <p class="plant-price">120 MDL</p>
                 <p class="plant-desc">Яркие декоративные побеги</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/golubaia-eli.png" alt="Golubaia Eli">
                 <h4>Голубая ель</h4>
                 <p class="plant-price">450 MDL</p>
                 <p class="plant-desc">Морозостойкая серебристая ель</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/magonia2.png" alt="Magonia">
                 <h4>Магония</h4>
                 <p class="plant-price">140 MDL</p>
                 <p class="plant-desc">Вечнозеленый кустарник с голубыми ягодами</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/spirea.png" alt="Metelnik">
                 <h4>Спирея</h4>
                 <p class="plant-price">85 MDL</p>
                 <p class="plant-desc">Пышное летнее растение</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/metelnik.png" alt="Metelnik">
                 <h4>Метельник</h4>
                 <p class="plant-price">95 MDL</p>
                 <p class="plant-desc">Золотистые соцветия</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/mojevelnik.png" alt="Mojevelnik">
                 <h4>Можжевельник</h4>
                 <p class="plant-price">220 MDL</p>
                 <p class="plant-desc">Стелющаяся форма</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/puzireplodnik.png" alt="Puzireplodnik">
                 <h4>Пузыреплодник</h4>
                 <p class="plant-price">110 MDL</p>
@@ -124,32 +123,32 @@
 
           <div class="category">
             <h3>Цветы и покровники</h3>
-            <div class="plant-grid">
-              <div class="plant-card">
+            <div class="plant-grid grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              <div class="plant-card p-5">
                 <img src="../public/iris.png" alt="Iris">
                 <h4>Ирис</h4>
                 <p class="plant-price">45 MDL</p>
                 <p class="plant-desc">Многолетний садовый сорт</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/spirea2.png" alt="spirea">
                 <h4>Спирея розовая</h4>
                 <p class="plant-price">90 MDL</p>
                 <p class="plant-desc">Яркие розовые зонтики</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/sireni.png" alt="sireni">
                 <h4>Сирень</h4>
                 <p class="plant-price">150 MDL</p>
                 <p class="plant-desc">Ароматные крупные кисти</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/rozi.png" alt="rozi">
                 <h4>Роза</h4>
                 <p class="plant-price">55 MDL</p>
                 <p class="plant-desc">Королева каждого сада</p>
               </div>
-              <div class="plant-card">
+              <div class="plant-card p-5">
                 <img src="../public/gladiolus.png" alt="gladiolus">
                 <h4>Гладиолус</h4>
                 <p class="plant-price">25 MDL</p>
@@ -163,7 +162,7 @@
       </section>
 
       <!-- contact -->
-      <section id="contact" class="section">
+      <section id="contact" class="section p-8 mb-8">
         <div class="contact-content">
           <h2 class="section-title">Контактная информация</h2>
           <p class="section-subtitle">Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!
