@@ -15,11 +15,11 @@
     <!-- header -->
     <header class="header bg-[rgba(255,255,255,0.6)] rounded-[20px] p-4 mb-8">
       <nav class="nav flex justify-between items-center">
-        <a href="#home" class="logo">Дачный Сад</a>
+        <a href="#home" class="logo text-2xl font-bold text-[var(--color-primary)] no-underline">Дачный Сад</a>
         <ul class="nav-links flex list-none gap-8">
-          <li><a href="#about">Инфо</a></li>
-          <li><a href="#plants">Саженцы</a></li>
-          <li><a href="#contact">Контакты</a></li>
+          <li><a href="#about" class="no-underline text-[var(--color-text)] font-medium">Инфо</a></li>
+          <li><a href="#plants" class="no-underline text-[var(--color-text)] font-medium">Саженцы</a></li>
+          <li><a href="#contact" class="no-underline text-[var(--color-text)] font-medium">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -29,24 +29,24 @@
       <!-- hero -->
       <section id="home" class="hero py-[60px] px-[40px] mb-8">
         <div class="hero-content text-white max-w-[800px] mx-auto">
-          <h1>Саженцы из нашего семейного сада</h1>
-          <p class="hero-subtitle">Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной
+          <h1 class="text-4xl mb-5 leading-snug">Саженцы из нашего семейного сада</h1>
+          <p class="hero-subtitle text-lg mb-8 opacity-95">Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной
             цене. Помогите нам предотвратить заростание и вырастите свой собственный сад.</p>
-          <a href="#plants" class="btn inline-block py-3.5 px-8 bg-white text-[var(--color-primary)] rounded-[30px] no-underline font-semibold text-base border-0">Наши растения</a>
+          <a href="#plants" class="btn inline-block py-3.5 px-8 bg-white text-[var(--color-primary)] rounded-[30px] no-underline font-semibold text-base border-0 hover:bg-[var(--color-primary-dark)] hover:text-white hover:-translate-y-0.5">Наши растения</a>
         </div>
       </section>
 
       <!-- about -->
       <section id="about" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-center md:grid-cols-2">
         <div class="about-content">
-          <h2 class="section-title">Про нас</h2>
+          <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Про нас</h2>
           <div class="about-text">
-            <p>Мы живём в селе, вдали от города, и ухаживаем за нашим большим садом. В нашем саду растёт множество
+            <p class="mb-4 text-[var(--color-text-light)] text-base">Мы живём в селе, вдали от города, и ухаживаем за нашим большим садом. В нашем саду растёт множество
               различных видов растений со всего мира.</p>
-            <p>Как знает любой садовод, растения естественным образом дают молодую поросль. Чтобы сад оставался здоровым
+            <p class="mb-4 text-[var(--color-text-light)] text-base">Как знает любой садовод, растения естественным образом дают молодую поросль. Чтобы сад оставался здоровым
               и не зарастал, мы аккуратно удаляем часть этих сеянцев. Вместо того чтобы выбрасывать их, мы решили
               поделиться ими с другими любителями растений по скромным ценам.</p>
-            <p>Каждый сеянец, который вы покупаете, выращен в питательной почве, заботливо взращён в нашем семейном саду
+            <p class="mb-4 text-[var(--color-text-light)] text-base">Каждый сеянец, который вы покупаете, выращен в питательной почве, заботливо взращён в нашем семейном саду
               и готов прекрасно прижиться у вас.</p>
           </div>
         </div>
@@ -57,121 +57,121 @@
 
       <!-- plants -->
       <section id="plants" class="section p-8 mb-8">
-        <h2 class="section-title">Саженцы</h2>
-        <p class="section-subtitle">Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников
+        <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Саженцы</h2>
+        <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников
           цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.</p>
         <div class="plant-categories flex flex-col gap-8">
           <div class="category">
-            <h3>Деревья и кустарники</h3>
+            <h3 class="text-xl text-[var(--color-primary)] mb-4 pb-2 border-b-2 border-[var(--color-secondary)] inline-block">Деревья и кустарники</h3>
             <div class="plant-grid grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              <div class="plant-card p-5">
-                <img src="../public/boyarishnik.png" alt="Boyarishnik">
-                <h4>Боярышник</h4>
-                <p class="plant-price">65 MDL</p>
-                <p class="plant-desc">Лекарственный и декоративный</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/boyarishnik.png" alt="Boyarishnik" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Боярышник</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">65 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Лекарственный и декоративный</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/tuia.png" alt="Tuia">
-                <h4>Туя</h4>
-                <p class="plant-price">180 MDL</p>
-                <p class="plant-desc">Вечнозеленое хвойное растение</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/tuia.png" alt="Tuia" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Туя</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">180 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Вечнозеленое хвойное растение</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/dioren.png" alt="Dioren">
-                <h4>Дёрен</h4>
-                <p class="plant-price">120 MDL</p>
-                <p class="plant-desc">Яркие декоративные побеги</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/dioren.png" alt="Dioren" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Дёрен</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">120 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Яркие декоративные побеги</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/golubaia-eli.png" alt="Golubaia Eli">
-                <h4>Голубая ель</h4>
-                <p class="plant-price">450 MDL</p>
-                <p class="plant-desc">Морозостойкая серебристая ель</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/golubaia-eli.png" alt="Golubaia Eli" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Голубая ель</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">450 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Морозостойкая серебристая ель</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/magonia2.png" alt="Magonia">
-                <h4>Магония</h4>
-                <p class="plant-price">140 MDL</p>
-                <p class="plant-desc">Вечнозеленый кустарник с голубыми ягодами</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/magonia2.png" alt="Magonia" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Магония</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">140 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Вечнозеленый кустарник с голубыми ягодами</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/spirea.png" alt="Metelnik">
-                <h4>Спирея</h4>
-                <p class="plant-price">85 MDL</p>
-                <p class="plant-desc">Пышное летнее растение</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/spirea.png" alt="Metelnik" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Спирея</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">85 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Пышное летнее растение</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/metelnik.png" alt="Metelnik">
-                <h4>Метельник</h4>
-                <p class="plant-price">95 MDL</p>
-                <p class="plant-desc">Золотистые соцветия</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/metelnik.png" alt="Metelnik" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Метельник</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">95 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Золотистые соцветия</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/mojevelnik.png" alt="Mojevelnik">
-                <h4>Можжевельник</h4>
-                <p class="plant-price">220 MDL</p>
-                <p class="plant-desc">Стелющаяся форма</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/mojevelnik.png" alt="Mojevelnik" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Можжевельник</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">220 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Стелющаяся форма</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/puzireplodnik.png" alt="Puzireplodnik">
-                <h4>Пузыреплодник</h4>
-                <p class="plant-price">110 MDL</p>
-                <p class="plant-desc">Неприхотливая живая изгородь</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/puzireplodnik.png" alt="Puzireplodnik" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Пузыреплодник</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">110 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Неприхотливая живая изгородь</p>
               </div>
             </div>
           </div>
 
           <div class="category">
-            <h3>Цветы и покровники</h3>
+            <h3 class="text-xl text-[var(--color-primary)] mb-4 pb-2 border-b-2 border-[var(--color-secondary)] inline-block">Цветы и покровники</h3>
             <div class="plant-grid grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              <div class="plant-card p-5">
-                <img src="../public/iris.png" alt="Iris">
-                <h4>Ирис</h4>
-                <p class="plant-price">45 MDL</p>
-                <p class="plant-desc">Многолетний садовый сорт</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/iris.png" alt="Iris" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Ирис</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">45 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Многолетний садовый сорт</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/spirea2.png" alt="spirea">
-                <h4>Спирея розовая</h4>
-                <p class="plant-price">90 MDL</p>
-                <p class="plant-desc">Яркие розовые зонтики</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/spirea2.png" alt="spirea" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Спирея розовая</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">90 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Яркие розовые зонтики</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/sireni.png" alt="sireni">
-                <h4>Сирень</h4>
-                <p class="plant-price">150 MDL</p>
-                <p class="plant-desc">Ароматные крупные кисти</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/sireni.png" alt="sireni" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Сирень</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">150 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Ароматные крупные кисти</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/rozi.png" alt="rozi">
-                <h4>Роза</h4>
-                <p class="plant-price">55 MDL</p>
-                <p class="plant-desc">Королева каждого сада</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/rozi.png" alt="rozi" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Роза</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">55 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Королева каждого сада</p>
               </div>
-              <div class="plant-card p-5">
-                <img src="../public/gladiolus.png" alt="gladiolus">
-                <h4>Гладиолус</h4>
-                <p class="plant-price">25 MDL</p>
-                <p class="plant-desc">Высокий и изящный</p>
+              <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+                <img src="../public/gladiolus.png" alt="gladiolus" class="w-full aspect-square object-cover rounded-[8px] mb-3">
+                <h4 class="text-lg text-[var(--color-text)] mb-1">Гладиолус</h4>
+                <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">25 MDL</p>
+                <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">Высокий и изящный</p>
               </div>
             </div>
           </div>
         </div>
 
-        <p class="availability-note">* Большинство растений можно сажать только в определённое время года.</p>
+        <p class="availability-note text-center text-[var(--color-text-light)] italic mt-6">* Большинство растений можно сажать только в определённое время года.</p>
       </section>
 
       <!-- contact -->
       <section id="contact" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-start md:grid-cols-2">
         <div class="contact-content">
-          <h2 class="section-title">Контактная информация</h2>
-          <p class="section-subtitle">Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!
+          <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Контактная информация</h2>
+          <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!
           </p>
           <div class="contact-info">
-            <p><span>Адрес:</span> Vadul lui Vodă, Piața Agricola</p>
-            <p><span>Мобильный телефон: </span>069-60-70-72</p>
-            <p><span>Городской телефон: </span>022-49-60-89</p>
-            <p><span>Эл. Почта: </span>barbaroshka@rambler.ru</p>
+            <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Адрес:</span> Vadul lui Vodă, Piața Agricola</p>
+            <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Мобильный телефон: </span>069-60-70-72</p>
+            <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Городской телефон: </span>022-49-60-89</p>
+            <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Эл. Почта: </span>barbaroshka@rambler.ru</p>
           </div>
         </div>
         <div class="map">
