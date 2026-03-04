@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <div class="main-container">
+  <div class="main-container flex flex-col justify-between min-h-[calc(100vh-150px)] w-[85%] mx-auto mt-8 p-8 rounded-[30px]">
     <!-- header -->
-    <header class="header">
-      <nav class="nav">
+    <header class="header bg-[rgba(255,255,255,0.6)] rounded-[20px] p-4 mb-8">
+      <nav class="nav flex justify-between items-center">
         <a href="#home" class="logo">Дачный Сад</a>
-        <ul class="nav-links">
+        <ul class="nav-links flex list-none gap-8">
           <li><a href="#about">Инфо</a></li>
           <li><a href="#plants">Саженцы</a></li>
           <li><a href="#contact">Контакты</a></li>
@@ -28,16 +28,16 @@
     <main class="main-content">
       <!-- hero -->
       <section id="home" class="hero py-[60px] px-[40px] mb-8">
-        <div class="hero-content">
+        <div class="hero-content text-white max-w-[800px] mx-auto">
           <h1>Саженцы из нашего семейного сада</h1>
           <p class="hero-subtitle">Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной
             цене. Помогите нам предотвратить заростание и вырастите свой собственный сад.</p>
-          <a href="#plants" class="btn">Наши растения</a>
+          <a href="#plants" class="btn inline-block py-3.5 px-8 bg-white text-[var(--color-primary)] rounded-[30px] no-underline font-semibold text-base border-0">Наши растения</a>
         </div>
       </section>
 
       <!-- about -->
-      <section id="about" class="section p-8 mb-8">
+      <section id="about" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-center md:grid-cols-2">
         <div class="about-content">
           <h2 class="section-title">Про нас</h2>
           <div class="about-text">
@@ -50,8 +50,8 @@
               и готов прекрасно прижиться у вас.</p>
           </div>
         </div>
-        <div class="about-image">
-          <img src="../public/about.jpg" alt="Garden plants">
+        <div class="about-image w-full mx-auto md:order-2">
+          <img src="../public/about.jpg" alt="Garden plants" class="w-full h-auto block rounded-[16px]">
         </div>
       </section>
 
@@ -162,7 +162,7 @@
       </section>
 
       <!-- contact -->
-      <section id="contact" class="section p-8 mb-8">
+      <section id="contact" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-start md:grid-cols-2">
         <div class="contact-content">
           <h2 class="section-title">Контактная информация</h2>
           <p class="section-subtitle">Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!
@@ -178,11 +178,11 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.5968781259294!2d29.0815239!3d47.0873684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c965935a595cff%3A0x9962e5cc16168968!2sPiata%20Agricola!5e0!3m2!1sru!2s!4v1771776578287!5m2!1sru!2s"
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="w-full h-[350px] rounded-[16px]"></iframe>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer bg-[rgba(255,255,255,0.4)] text-center p-6 rounded-[16px] text-sm">
       <p>&copy; 2026 Дачный Сад</p>
     </footer>
   </div>
