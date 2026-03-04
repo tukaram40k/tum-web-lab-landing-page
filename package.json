@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css",
-    "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "dev:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
