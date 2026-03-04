@@ -40,16 +40,11 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
   color: var(--color-primary);
-  text-decoration: none;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: var(--color-text);
-  font-weight: 500;
   transition: var(--transition);
 }
 
@@ -66,15 +61,11 @@ body {
 }
 
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
   color: var(--color-primary);
 }
 
 .section-subtitle {
   color: var(--color-text-light);
-  margin-bottom: 2rem;
-  font-size: 1rem;
 }
 
 .hero {
@@ -89,14 +80,10 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.2rem;
   line-height: 1.2;
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
   opacity: 0.95;
 }
 
@@ -105,7 +92,6 @@ body {
   background-color: var(--color-white);
   color: var(--color-primary);
   border-radius: var(--btn-border-radius);
-  font-weight: 600;
   font-size: 1rem;
   transition: var(--transition);
   border: none;
@@ -114,81 +100,40 @@ body {
 .btn:hover {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
-  transform: translateY(-2px);
   box-shadow: var(--shadow-medium);
 }
 
-/* ======== about ======== */
-.about-text p {
-  margin-bottom: 1rem;
-  color: var(--color-text-light);
-  font-size: 1rem;
-}
-
 /* ======== plants ======== */
-.category h3 {
-  font-size: 1.3rem;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color-secondary);
-  display: inline-block;
-}
 
 .plant-card {
   background-color: var(--color-background);
   border-radius: var(--border-radius);
-  text-align: center;
   transition: var(--transition);
 }
 
 .plant-card:hover {
-  transform: translateY(-5px);
   box-shadow: var(--shadow-medium);
   border-color: var(--color-primary);
 }
 
-.plant-card img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
-}
-
-.plant-card h4 {
-  font-size: 1.1rem;
-  color: var(--color-text);
-  margin-bottom: 0.25rem;
-}
-
 .plant-price {
-  font-size: 1.15rem;
-  font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 0.25rem;
 }
 
 .plant-desc {
-  font-size: 0.85rem;
   color: var(--color-text-light);
 }
 
 .availability-note {
-  text-align: center;
-  color: var(--color-text-light);
   font-style: italic;
-  margin-top: 1.5rem;
 }
 
 /* ======== contact ======== */
 .contact-info p {
-  margin-bottom: 0.75rem;
   color: var(--color-text-light);
 }
 
 .contact-info span {
-  margin-bottom: 0.75rem;
   color: var(--color-primary);
 }
 
