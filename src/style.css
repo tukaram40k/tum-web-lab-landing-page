@@ -197,3 +197,92 @@ body {
   color: var(--color-text);
   backdrop-filter: blur(10px);
 }
+
+/* ======== mascot ======== */
+.mascot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.mascot-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mascot-image {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  animation: mascot-bounce 2s ease-in-out infinite;
+}
+
+@keyframes mascot-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.mascot-message {
+  position: absolute;
+  bottom: 130px;
+  right: 0;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  padding: 12px 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.mascot-message::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-white);
+  transform: rotate(45deg);
+}
+
+.mascot-container:hover .mascot-message {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mascot-container:hover .mascot-image {
+  animation-play-state: paused;
+}
+
+@media (max-width: 639px) {
+  .mascot-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .mascot-image {
+    width: 80px;
+  }
+
+  .mascot-message {
+    bottom: 90px;
+    font-size: 0.8rem;
+    max-width: 200px;
+    white-space: normal;
+  }
+}
