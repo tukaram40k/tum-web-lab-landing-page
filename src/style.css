@@ -125,6 +125,40 @@ body {
 
 /* ======== plants ======== */
 
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .plant-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .plant-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .plant-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .plant-card {
+    padding: 30px;
+  }
+}
+
 .plant-card {
   background-color: var(--color-background);
   border-radius: var(--border-radius);
