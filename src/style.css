@@ -225,10 +225,10 @@ body {
 
 @keyframes mascot-bounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) scaleY(1) rotate(0deg);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px) scaleY(1.1) rotate(-5deg);
   }
 }
 
