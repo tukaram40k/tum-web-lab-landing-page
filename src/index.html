@@ -177,15 +177,48 @@
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.5968781259294!2d29.0815239!3d47.0873684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c965935a595cff%3A0x9962e5cc16168968!2sPiata%20Agricola!5e0!3m2!1sru!2s!4v1771776578287!5m2!1sru!2s"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            width="400" height="300" style="border:0" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="w-full h-[350px] rounded-[16px]"></iframe>
         </div>
       </section>
     </main>
     <footer class="footer bg-[rgba(255,255,255,0.4)] text-center p-6 rounded-[16px] text-sm">
-      <p>&copy; 2026 Дачный Сад</p>
+      <p>&copy 2026 Дачный Сад</p>
     </footer>
   </div>
+
+  <!-- Mascot -->
+  <div class="mascot-container" id="mascot">
+    <div class="mascot-message" id="mascot-message">Добро пожаловать!</div>
+    <img src="../public/landing-page-mascot.png" alt="Mascot" class="mascot-image">
+  </div>
+
+  <script>
+    (function() {
+      const mascot = document.getElementById('mascot')
+      const delay = 5000
+      let inactivityTimer
+      
+      function showMascot() {
+        mascot.classList.add('visible')
+      }
+
+      function resetTimer() {
+        mascot.classList.remove('visible')
+        clearTimeout(inactivityTimer)
+        inactivityTimer = setTimeout(showMascot, delay)
+      }
+
+      // start on page load
+      resetTimer()
+
+      // reset on activity
+      window.addEventListener('keydown', resetTimer)
+      window.addEventListener('scroll', resetTimer)
+      window.addEventListener('touchstart', resetTimer)
+      window.addEventListener('click', resetTimer)
+    })()
+  </script>
 </body>
 
 </html>
