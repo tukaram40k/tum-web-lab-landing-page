@@ -1,0 +1,65 @@
+---
+interface Plant {
+  image: string;
+  name: string;
+  price: string;
+  description: string;
+}
+
+interface PlantCategory {
+  title: string;
+  plants: Plant[];
+}
+
+const categories: PlantCategory[] = [
+  {
+    title: "Деревья и кустарники",
+    plants: [
+      { image: "/boyarishnik.png", name: "Боярышник", price: "65 MDL", description: "Лекарственный и декоративный" },
+      { image: "/tuia.png", name: "Туя", price: "180 MDL", description: "Вечнозеленое хвойное растение" },
+      { image: "/dioren.png", name: "Дёрен", price: "120 MDL", description: "Яркие декоративные побеги" },
+      { image: "/golubaia-eli.png", name: "Голубая ель", price: "450 MDL", description: "Морозостойкая серебристая ель" },
+      { image: "/magonia2.png", name: "Магония", price: "140 MDL", description: "Вечнозеленый кустарник с голубыми ягодами" },
+      { image: "/spirea.png", name: "Спирея", price: "85 MDL", description: "Пышное летнее растение" },
+      { image: "/metelnik.png", name: "Метельник", price: "95 MDL", description: "Золотистые соцветия" },
+      { image: "/mojevelnik.png", name: "Можжевельник", price: "220 MDL", description: "Стелющаяся форма" },
+      { image: "/puzireplodnik.png", name: "Пузыреплодник", price: "110 MDL", description: "Неприхотливая живая изгородь" },
+    ]
+  },
+  {
+    title: "Цветы и покровники",
+    plants: [
+      { image: "/iris.png", name: "Ирис", price: "45 MDL", description: "Многолетний садовый сорт" },
+      { image: "/spirea2.png", name: "Спирея розовая", price: "90 MDL", description: "Яркие розовые зонтики" },
+      { image: "/sireni.png", name: "Сирень", price: "150 MDL", description: "Ароматные крупные кисти" },
+      { image: "/rozi.png", name: "Роза", price: "55 MDL", description: "Королева каждого сада" },
+      { image: "/gladiolus.png", name: "Гладиолус", price: "25 MDL", description: "Высокий и изящный" },
+    ]
+  }
+];
+---
+
+<section id="plants" class="section p-8 mb-8">
+  <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Саженцы</h2>
+  <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников
+    цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.</p>
+  <div class="plant-categories flex flex-col gap-8">
+    {categories.map((category) => (
+      <div class="category">
+        <h3 class="text-xl text-[var(--color-primary)] mb-4 pb-2 border-b-2 border-[var(--color-secondary)] inline-block">{category.title}</h3>
+        <div class="plant-grid">
+          {category.plants.map((plant) => (
+            <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
+              <img src={plant.image} alt={plant.name} class="w-full aspect-square object-cover rounded-[8px] mb-3">
+              <h4 class="text-lg text-[var(--color-text)] mb-1">{plant.name}</h4>
+              <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">{plant.price}</p>
+              <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">{plant.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <p class="availability-note text-center text-[var(--color-text-light)] italic mt-6">* Большинство растений можно сажать только в определённое время года.</p>
+</section>

@@ -1,0 +1,31 @@
+<div class="mascot-container" id="mascot">
+  <div class="mascot-message" id="mascot-message">Добро пожаловать!</div>
+  <img src="/landing-page-mascot.png" alt="Mascot" class="mascot-image">
+</div>
+
+<script>
+  (function() {
+    const mascot = document.getElementById('mascot')
+    const delay = 5000
+    let inactivityTimer
+
+    function showMascot() {
+      mascot.classList.add('visible')
+    }
+
+    function resetTimer() {
+      mascot.classList.remove('visible')
+      clearTimeout(inactivityTimer)
+      inactivityTimer = setTimeout(showMascot, delay)
+    }
+
+    // start on page load
+    resetTimer()
+
+    // reset on activity
+    window.addEventListener('keydown', resetTimer)
+    window.addEventListener('scroll', resetTimer)
+    window.addEventListener('touchstart', resetTimer)
+    window.addEventListener('click', resetTimer)
+  })()
+</script>
