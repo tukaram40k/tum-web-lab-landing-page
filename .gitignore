@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 .astro/
+public/output.css

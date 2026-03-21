@@ -1,17 +1,27 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Plants from '../components/Plants.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import Mascot from '../components/Mascot.astro';
 ---
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
+<Layout title="Дачный Сад">
+  <div class="main-container">
+    <Header />
+    
+    <main class="main-content">
+      <Hero />
+      <About />
+      <Plants />
+      <Contact />
+    </main>
+    
+    <Footer />
+  </div>
+  
+  <Mascot />
+</Layout>
