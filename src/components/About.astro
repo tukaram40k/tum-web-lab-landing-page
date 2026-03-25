@@ -1,17 +1,22 @@
+---
+const { 
+  title = "Про нас",
+  p1 = "Мы живём в селе, вдали от города, и ухаживаем за нашим большим садом. В нашем саду растёт множество различных видов растений со всего мира.",
+  p2 = "Как знает любой садовод, растения естественным образом дают молодую поросль. Чтобы сад оставался здоровым и не зарастал, мы аккуратно удаляем часть этих сеянцев. Вместо того чтобы выбрасывать их, мы решили поделиться ими с другими любителями растений по скромным ценам.",
+  p3 = "Каждый сеянец, который вы покупаете, выращен в питательной почве, заботливо взращён в нашем семейном саду и готов прекрасно прижиться у вас."
+} = Astro.props;
+---
+
 <section id="about" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-center md:grid-cols-2">
   <div class="about-content">
-    <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Про нас</h2>
+    <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">{title}</h2>
     <div class="about-text">
-      <p class="mb-4 text-[var(--color-text-light)] text-base">Мы живём в селе, вдали от города, и ухаживаем за нашим большим садом. В нашем саду растёт множество
-        различных видов растений со всего мира.</p>
-      <p class="mb-4 text-[var(--color-text-light)] text-base">Как знает любой садовод, растения естественным образом дают молодую поросль. Чтобы сад оставался здоровым
-        и не зарастал, мы аккуратно удаляем часть этих сеянцев. Вместо того чтобы выбрасывать их, мы решили
-        поделиться ими с другими любителями растений по скромным ценам.</p>
-      <p class="mb-4 text-[var(--color-text-light)] text-base">Каждый сеянец, который вы покупаете, выращен в питательной почве, заботливо взращён в нашем семейном саду
-        и готов прекрасно прижиться у вас.</p>
+      <p class="mb-4 text-[var(--color-text-light)] text-base">{p1}</p>
+      <p class="mb-4 text-[var(--color-text-light)] text-base">{p2}</p>
+      <p class="mb-4 text-[var(--color-text-light)] text-base">{p3}</p>
     </div>
   </div>
   <div class="about-image w-full mx-auto md:order-2">
-    <img src="/about.jpg" alt="Garden plants" class="w-full h-auto block rounded-[16px]">
+    <img src="/about.jpg" alt="Garden plants" class="w-full h-auto block rounded-[16px]" />
   </div>
 </section>
