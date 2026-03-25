@@ -13,6 +13,12 @@
     "tailwindcss": "^4.2.1"
   },
   "dependencies": {
-    "astro": "^6.0.7"
+    "astro": "^5.0.0",
+    "@keystatic/astro": "^5.0.0",
+    "@keystatic/core": "^0.5.0",
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/markdoc": "^0.12.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
