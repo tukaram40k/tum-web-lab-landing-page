@@ -1,8 +1,16 @@
+---
+const { 
+  title = "Саженцы из нашего семейного сада",
+  description = "Питомник декоративных растений на севере Молдовы. Большой выбор, доступные цены, высокое качество." 
+} = Astro.props;
+---
+
 <section id="home" class="hero py-[60px] px-[40px] mb-8">
   <div class="hero-content text-white max-w-[800px] mx-auto">
-    <h1 class="text-4xl mb-5 leading-snug">Саженцы из нашего семейного сада</h1>
-    <p class="hero-subtitle text-lg mb-8 opacity-95">Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной
-      цене. Помогите нам предотвратить заростание и вырастите свой собственный сад.</p>
+    <h1 class="text-4xl mb-5 leading-snug">{title}</h1>
+    <p class="hero-description text-lg mb-8 opacity-95">
+      {description}
+    </p>
     <a href="#plants" class="btn inline-block py-3.5 px-8 bg-white text-[var(--color-primary)] rounded-[30px] no-underline font-semibold text-base border-0 hover:bg-[var(--color-primary-dark)] hover:text-white hover:-translate-y-0.5">Наши растения</a>
   </div>
 </section>
