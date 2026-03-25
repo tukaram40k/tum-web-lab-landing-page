@@ -17,7 +17,7 @@ export default config({
         heroDescription: fields.text({
           label: 'Hero Description',
           multiline: true,
-          defaultValue: 'Растения для вашего дома\nПитомник декоративных растений на севере Молдовы. Большой выбор, доступные цены, высокое качество.'
+          defaultValue: 'Семена и саженцы более 20 видов здоровых, выращенных с любовью растений по скромной цене. Помогите нам предотвратить заростание и вырастите свой собственный сад.'
         }),
         aboutTitle: fields.text({
           label: 'About Title',
@@ -51,6 +51,36 @@ export default config({
           label: 'Plants Note',
           defaultValue: '* Большинство растений можно сажать только в определённое время года.'
         }),
+
+        plantGrid: fields.array(
+          fields.object({
+            title: fields.text({
+              label: 'Category title',
+              defaultValue: 'Деревья и кустарники',
+            }),
+            plants: fields.array(
+              fields.object({
+                name: fields.text({ label: 'Name', defaultValue: 'Боярышник' }),
+                price: fields.text({ label: 'Price', defaultValue: '65 MDL' }),
+                description: fields.text({
+                  label: 'Description',
+                  multiline: true,
+                  defaultValue: 'Лекарственный и декоративный',
+                }),
+                image: fields.text({
+                  label: 'Image path (from /public)',
+                  defaultValue: '/boyarishnik.png',
+                }),
+                visible: fields.checkbox({
+                  label: 'Visible',
+                  defaultValue: true,
+                }),
+              }),
+              { label: 'Plants', itemLabel: (item) => item.fields.name.value || 'Plant' }
+            ),
+          }),
+          { label: 'Plant grid categories', itemLabel: (item) => item.fields.title.value || 'Category' }
+        ),
         contactTitle: fields.text({
           label: 'Contact Title',
           defaultValue: 'Контактная информация'

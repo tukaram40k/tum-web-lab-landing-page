@@ -4,6 +4,7 @@ interface Plant {
   name: string;
   price: string;
   description: string;
+  visible?: boolean;
 }
 
 interface PlantCategory {
@@ -11,7 +12,7 @@ interface PlantCategory {
   plants: Plant[];
 }
 
-const categories: PlantCategory[] = [
+const fallbackCategories: PlantCategory[] = [
   {
     title: "Деревья и кустарники",
     plants: [
@@ -41,19 +42,24 @@ const categories: PlantCategory[] = [
 const {
   title = "Саженцы",
   subtitle = "Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.",
-  note = "* Большинство растений можно сажать только в определённое время года."
+  note = "* Большинство растений можно сажать только в определённое время года.",
+  categories,
 } = Astro.props;
+
+const resolvedCategories: PlantCategory[] = Array.isArray(categories) && categories.length
+  ? categories
+  : fallbackCategories;
 ---
 
 <section id="plants" class="section p-8 mb-8">
   <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">{title}</h2>
   <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">{subtitle}</p>
   <div class="plant-categories flex flex-col gap-8">
-    {categories.map((category) => (
+  {resolvedCategories.map((category) => (
       <div class="category">
         <h3 class="text-xl text-[var(--color-primary)] mb-4 pb-2 border-b-2 border-[var(--color-secondary)] inline-block">{category.title}</h3>
         <div class="plant-grid">
-          {category.plants.map((plant) => (
+      {category.plants.filter((p) => p.visible !== false).map((plant) => (
             <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
               <img src={plant.image} alt={plant.name} class="w-full aspect-square object-cover rounded-[8px] mb-3" />
               <h4 class="text-lg text-[var(--color-text)] mb-1">{plant.name}</h4>
