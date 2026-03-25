@@ -8,6 +8,116 @@
   "plantsTitle": "Саженцы",
   "plantsSubtitle": "Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.",
   "plantsNote": "* Большинство растений можно сажать только в определённое время года.",
+  "plantGrid": [
+    {
+      "title": "Деревья и кустарники",
+      "plants": [
+        {
+          "name": "Боярышник",
+          "price": "65 MDL",
+          "description": "Лекарственный и декоративный",
+          "image": "/boyarishnik.png",
+          "visible": true
+        },
+        {
+          "name": "Туя",
+          "price": "180 MDL",
+          "description": "Вечнозеленое хвойное растение",
+          "image": "/tuia.png",
+          "visible": true
+        },
+        {
+          "name": "Дёрен",
+          "price": "120 MDL",
+          "description": "Яркие декоративные побеги",
+          "image": "/dioren.png",
+          "visible": true
+        },
+        {
+          "name": "Голубая ель",
+          "price": "450 MDL",
+          "description": "Морозостойкая серебристая ель",
+          "image": "/golubaia-eli.png",
+          "visible": true
+        },
+        {
+          "name": "Магония",
+          "price": "140 MDL",
+          "description": "Вечнозеленый кустарник с голубыми ягодами",
+          "image": "/magonia2.png",
+          "visible": true
+        },
+        {
+          "name": "Спирея",
+          "price": "85 MDL",
+          "description": "Пышное летнее растение",
+          "image": "/spirea.png",
+          "visible": true
+        },
+        {
+          "name": "Метельник",
+          "price": "95 MDL",
+          "description": "Золотистые соцветия",
+          "image": "/metelnik.png",
+          "visible": true
+        },
+        {
+          "name": "Можжевельник",
+          "price": "220 MDL",
+          "description": "Стелющаяся форма",
+          "image": "/mojevelnik.png",
+          "visible": true
+        },
+        {
+          "name": "Пузыреплодник",
+          "price": "110 MDL",
+          "description": "Неприхотливая живая изгородь",
+          "image": "/puzireplodnik.png",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "title": "Цветы и покровники",
+      "plants": [
+        {
+          "name": "Ирис",
+          "price": "45 MDL",
+          "description": "Многолетний садовый сорт",
+          "image": "/iris.png",
+          "visible": true
+        },
+        {
+          "name": "Спирея розовая",
+          "price": "90 MDL",
+          "description": "Яркие розовые зонтики",
+          "image": "/spirea2.png",
+          "visible": true
+        },
+        {
+          "name": "Сирень",
+          "price": "150 MDL",
+          "description": "Ароматные крупные кисти",
+          "image": "/sireni.png",
+          "visible": true
+        },
+        {
+          "name": "Роза",
+          "price": "55 MDL",
+          "description": "Королева каждого сада",
+          "image": "/rozi.png",
+          "visible": true
+        },
+        {
+          "name": "Гладиолус",
+          "price": "25 MDL",
+          "description": "Высокий и изящный",
+          "image": "/gladiolus.png",
+          "visible": true
+        }
+      ]
+    }
+  ],
   "contactTitle": "Контактная информация",
   "contactSubtitle": "Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!",
   "contactAddress": "Vadul lui Vodă, Piața Agricola",

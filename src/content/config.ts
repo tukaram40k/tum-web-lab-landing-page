@@ -12,6 +12,23 @@ const landingPage = defineCollection({
     plantsTitle: z.string().optional(),
     plantsSubtitle: z.string().optional(),
     plantsNote: z.string().optional(),
+
+    plantGrid: z
+      .array(
+        z.object({
+          title: z.string(),
+          plants: z.array(
+            z.object({
+              name: z.string(),
+              price: z.string(),
+              description: z.string(),
+              image: z.string(),
+              visible: z.boolean().optional().default(true),
+            })
+          ),
+        })
+      )
+      .optional(),
     contactTitle: z.string().optional(),
     contactSubtitle: z.string().optional(),
     contactAddress: z.string().optional(),
