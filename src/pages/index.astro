@@ -1,4 +1,9 @@
 ---
+import { getEntry } from 'astro:content';
+
+const landingPage = await getEntry('landingPage', 'landing-page');
+const data = landingPage?.data || {};
+
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
@@ -14,10 +19,30 @@ import Mascot from '../components/Mascot.astro';
     <Header />
     
     <main class="main-content">
-      <Hero />
-      <About />
-      <Plants />
-      <Contact />
+      <Hero 
+        title={data.heroTitle}
+        subtitle={data.heroSubtitle}
+        description={data.heroDescription} 
+      />
+      <About 
+        title={data.aboutTitle}
+        p1={data.aboutParagraph1}
+        p2={data.aboutParagraph2}
+        p3={data.aboutParagraph3}
+      />
+      <Plants 
+        title={data.plantsTitle}
+        subtitle={data.plantsSubtitle}
+        note={data.plantsNote}
+      />
+      <Contact 
+        title={data.contactTitle}
+        subtitle={data.contactSubtitle}
+        address={data.contactAddress}
+        mobile={data.contactMobile}
+        phone={data.contactPhone}
+        email={data.contactEmail}
+      />
     </main>
     
     <Footer />

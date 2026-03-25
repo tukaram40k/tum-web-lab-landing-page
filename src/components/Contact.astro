@@ -1,13 +1,24 @@
+---
+const { 
+  title = "Контактная информация",
+  subtitle = "Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!",
+  address = "Vadul lui Vodă, Piața Agricola",
+  mobile = "069-60-70-72",
+  phone = "022-49-60-89",
+  email = "barbaroshka@rambler.ru"
+} = Astro.props;
+---
+
 <section id="contact" class="section p-8 mb-8 grid grid-cols-1 gap-8 items-start md:grid-cols-2">
   <div class="contact-content">
-    <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Контактная информация</h2>
-    <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">Чтобы узнать больше про наши растения или договориться о встрече, напишите нам!
+    <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">{title}</h2>
+    <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">{subtitle}
     </p>
     <div class="contact-info">
-      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Адрес:</span> Vadul lui Vodă, Piața Agricola</p>
-      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Мобильный телефон: </span>069-60-70-72</p>
-      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Городской телефон: </span>022-49-60-89</p>
-      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Эл. Почта: </span>barbaroshka@rambler.ru</p>
+      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Адрес:</span> {address}</p>
+      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Мобильный телефон: </span>{mobile}</p>
+      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Городской телефон: </span>{phone}</p>
+      <p class="mb-3 text-[var(--color-text-light)]"><span class="mb-3 text-[var(--color-primary)]">Эл. Почта: </span>{email}</p>
     </div>
   </div>
   <div class="map">

@@ -37,12 +37,17 @@ const categories: PlantCategory[] = [
     ]
   }
 ];
+
+const {
+  title = "Саженцы",
+  subtitle = "Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.",
+  note = "* Большинство растений можно сажать только в определённое время года."
+} = Astro.props;
 ---
 
 <section id="plants" class="section p-8 mb-8">
-  <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">Саженцы</h2>
-  <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">Здесь представленны все виды растений, саженцы которых у нас есть. Для кустарников
-    цена указана за один саженец с корнями и землёй. Для цветов указана цена за одну луковицу.</p>
+  <h2 class="section-title text-3xl mb-4 text-[var(--color-primary)]">{title}</h2>
+  <p class="section-subtitle text-[var(--color-text-light)] mb-8 text-base">{subtitle}</p>
   <div class="plant-categories flex flex-col gap-8">
     {categories.map((category) => (
       <div class="category">
@@ -50,7 +55,7 @@ const categories: PlantCategory[] = [
         <div class="plant-grid">
           {category.plants.map((plant) => (
             <div class="plant-card p-5 text-center bg-[var(--color-background)] rounded-[16px] transition hover:-translate-y-1 hover:border-[var(--color-primary)]">
-              <img src={plant.image} alt={plant.name} class="w-full aspect-square object-cover rounded-[8px] mb-3">
+              <img src={plant.image} alt={plant.name} class="w-full aspect-square object-cover rounded-[8px] mb-3" />
               <h4 class="text-lg text-[var(--color-text)] mb-1">{plant.name}</h4>
               <p class="plant-price text-[1.15rem] font-bold text-[var(--color-primary)] mb-1">{plant.price}</p>
               <p class="plant-desc text-[0.85rem] text-[var(--color-text-light)]">{plant.description}</p>
@@ -61,5 +66,5 @@ const categories: PlantCategory[] = [
     ))}
   </div>
 
-  <p class="availability-note text-center text-[var(--color-text-light)] italic mt-6">* Большинство растений можно сажать только в определённое время года.</p>
+  <p class="availability-note text-center text-[var(--color-text-light)] italic mt-6">{note}</p>
 </section>
