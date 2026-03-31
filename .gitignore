@@ -24,7 +24,6 @@ dist-ssr
 *.sw?
 
 .astro/
-public/output.css
 
 # Local Netlify folder
 .netlify

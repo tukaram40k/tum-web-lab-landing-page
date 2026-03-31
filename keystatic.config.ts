@@ -2,7 +2,10 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'cloud',
+  },
+  cloud: {
+    project: 'tum-web-lab-4/landing-page',
   },
   singletons: {
     landingPage: singleton({
