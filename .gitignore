@@ -25,3 +25,6 @@ dist-ssr
 
 .astro/
 public/output.css
+
+# Local Netlify folder
+.netlify
