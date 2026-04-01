@@ -17,7 +17,7 @@
           "price": "65 MDL",
           "description": "Лекарственный и декоративный",
           "image": "/boyarishnik.png",
-          "visible": true
+          "visible": false
         },
         {
           "name": "Туя",
